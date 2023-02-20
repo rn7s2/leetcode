@@ -1,7 +1,10 @@
-mod contains_duplicate;
+mod valid_anagram;
 
 pub struct Solution;
 
 fn main() {
-    println!("{}", Solution::contains_duplicate(vec![1, 2, 3, 4, 2]));
+    println!(
+        "{}",
+        Solution::is_anagram("rat".to_string(), "arc".to_string())
+    );
 }
