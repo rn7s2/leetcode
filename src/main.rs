@@ -1,10 +1,7 @@
-mod valid_anagram;
+mod group_anagrams;
 
 pub struct Solution;
 
 fn main() {
-    println!(
-        "{}",
-        Solution::is_anagram("rat".to_string(), "arc".to_string())
-    );
+    println!("{:?}", Solution::group_anagrams(vec!["a".to_owned()]));
 }
