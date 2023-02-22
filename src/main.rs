@@ -1,10 +1,7 @@
-mod top_k_frequent_elements;
+mod product_of_array_except_self;
 
 pub struct Solution;
 
 fn main() {
-    println!(
-        "{:?}",
-        Solution::top_k_frequent(vec![4, 1, -1, 2, -1, 2, 3], 2)
-    );
+    println!("{:?}", Solution::product_except_self(vec![-1, 1, 0, -3, 3]));
 }
