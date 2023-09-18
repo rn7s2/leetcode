@@ -1,15 +1,31 @@
-﻿// LeetCode.cpp : Defines the entry point for the application.
+// LeetCode.cpp : Defines the entry point for the application.
 //
 
-#include "MinCostToConnectAllPoints.cpp"
+#include "TheKWeakestRowsInAMatrix.cpp"
+
+template<typename T>
+void dumpVector(const vector<T>& v)
+{
+    for (const auto& e : v) {
+        cout << e << " ";
+    }
+    cout << "\n";
+}
 
 int main()
 {
     Solution s;
 
-    vector<vector<int>> case0{ {{5, 2}, {2, 2}, {7, 0}, {3, 10}, {0, 0}} };
-    cout << s.minCostConnectPoints(case0) << "\n";
+    vector<vector<int>> case0{ {{1,1,0,0,0},
+                                {1,1,1,1,0},
+                                {1,0,0,0,0},
+                                {1,1,0,0,0},
+                                {1,1,1,1,1}} };
+    dumpVector(s.kWeakestRows(case0, 3));
 
-    vector<vector<int>> case1{ {{3, 12}, {-2, 5}, {-4, 1}} };
-    cout << s.minCostConnectPoints(case1) << "\n";
+    vector<vector<int>> case1{ {{1,0,0,0},
+                                {1,1,1,1},
+                                {1,0,0,0},
+                                {1,0,0,0}} };
+    dumpVector(s.kWeakestRows(case1, 2));
 }
