@@ -1,12 +1,16 @@
 // LeetCode.cpp : Defines the entry point for the application.
 //
 
-#include "LongestPalindromicSubstring.cpp"
+#include "MedianOfTwoSortedArrays.cpp"
 
 int main()
 {
     Solution s;
-    cout << s.longestPalindrome("babad") << "\n";
-    cout << s.longestPalindrome("cbbd") << "\n";
-    cout << s.longestPalindrome("a") << "\n";
+    vector<int> nums1, nums2;
+
+    nums1 = { 1, 2 }, nums2 = { 3 };
+    cout << s.findMedianSortedArrays(nums1, nums2) << "\n";
+
+    nums1 = { 1, 2 }, nums2 = { 3, 4 };
+    cout << s.findMedianSortedArrays(nums1, nums2) << "\n";
 }
